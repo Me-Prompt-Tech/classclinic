@@ -1,51 +1,61 @@
+
+import Link from "next/link";
+
 export default function Navbar() {
-    return (
-      <header className="sticky top-0 z-50 border-b bg-white/95 backdrop-blur">
-        <div className="container mx-auto flex items-center justify-between px-6 py-4">
-          {/* Logo */}
-          <a
-            href="#home"
-            className="text-2xl font-bold text-blue-600"
+  return (
+    <header className="sticky top-0 z-50 px-4 pt-4">
+      <div className="glass rounded-3xl px-8 py-4 max-w-7xl mx-auto">
+        <div className="flex items-center justify-between">
+
+          <Link
+            href="/"
+            className="text-2xl font-bold gradient-text"
           >
-            คลาสคลินิกโคราช
-          </a>
-  
-          {/* Menu */}
-          <nav className="hidden items-center gap-8 md:flex">
-            <a
-              href="#home"
-              className="font-medium text-gray-700 transition hover:text-blue-600"
-            >
+            ✨ CLASS CLINIC KORAT
+          </Link>
+
+          <nav className="hidden md:flex gap-8">
+
+            <Link href="/" className="menu-link">
               หน้าแรก
-            </a>
-  
-            <a
-              href="#services"
-              className="font-medium text-gray-700 transition hover:text-blue-600"
-            >
+            </Link>
+
+            <Link href="/services" className="menu-link">
               บริการ
-            </a>
-  
-            <a
-              href="#about"
-              className="font-medium text-gray-700 transition hover:text-blue-600"
-            >
+            </Link>
+
+            <Link href="/about" className="menu-link">
               เกี่ยวกับเรา
-            </a>
-  
-            <a
-              href="#contact"
-              className="font-medium text-gray-700 transition hover:text-blue-600"
-            >
+            </Link>
+
+            <Link href="/contact" className="menu-link">
               ติดต่อ
-            </a>
+            </Link>
+
           </nav>
-  
-          {/* CTA */}
-          <button className="rounded-lg bg-blue-600 px-5 py-2 font-semibold text-white transition hover:bg-blue-700">
-            นัดหมาย
-          </button>
+
+          <Link
+            href="/booking"
+            className="
+              bg-gradient-to-r
+              from-pink-500
+              via-fuchsia-500
+              to-purple-500
+              text-white
+              px-6
+              py-3
+              rounded-2xl
+              font-semibold
+              shadow-lg
+              hover:scale-105
+              transition
+            "
+          >
+            ✨ จองคิวเลย
+          </Link>
+
         </div>
-      </header>
-    );
-  }
+      </div>
+    </header>
+  );
+}
