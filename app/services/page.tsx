@@ -42,7 +42,7 @@ export default function ServicePage() {
 
                 {/* col 2: Title + subTitle */}
                 <div className="min-w-0">
-                  <h3 className="text-2xl font-semibold text-[#D4AF37]">
+                  <h3 className="text-2xl font-semibold text-[#D4AF37]" mb-3>
                     💉ลดลิ้วรอย
                   </h3>
                   <p className="mt-1 text-sm text-slate-500">
