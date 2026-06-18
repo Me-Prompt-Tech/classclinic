@@ -1,2 +1,128 @@
+
 @import "tailwindcss";
+
+:root {
+  --pink: #ff4fa3;
+  --purple: #9f5cff;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+}
+
+.glass {
+  background: rgba(255,255,255,0.45);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255,255,255,0.4);
+  box-shadow:
+    0 8px 32px rgba(255,105,180,0.12),
+    0 0 40px rgba(255,182,193,0.12);
+}
+
+.gradient-text {
+  background: linear-gradient(
+    135deg,
+    #ff4fa3,
+    #ff78c5,
+    #9f5cff
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.sparkle {
+  position: relative;
+  overflow: hidden;
+}
+
+.sparkle::before {
+  content: "";
+  position: absolute;
+  inset: -200%;
+  background: linear-gradient(
+    120deg,
+    transparent 35%,
+    rgba(255,255,255,.9) 50%,
+    transparent 65%
+  );
+  animation: shine 8s linear infinite;
+}
+
+@keyframes shine {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #444;
+}
+
+.input {
+  width: 100%;
+  padding: 14px;
+  border-radius: 16px;
+  border: 1px solid #ececec;
+  background: rgba(255,255,255,.85);
+  transition: .3s;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #ff4fa3;
+  box-shadow: 0 0 0 4px rgba(255,79,163,.15);
+}
+
+.booking-btn {
+  width: 100%;
+  margin-top: 24px;
+  padding: 16px;
+  border-radius: 20px;
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+  background: linear-gradient(
+    135deg,
+    #ff4fa3,
+    #ff78c5,
+    #9f5cff
+  );
+  transition: .3s;
+  box-shadow:
+    0 10px 30px rgba(255,79,163,.35);
+}
+
+.booking-btn:hover {
+  transform: translateY(-3px);
+}
+
+.promo-card {
+  background: linear-gradient(
+    135deg,
+    rgba(255,255,255,.7),
+    rgba(255,192,203,.3)
+  );
+  padding: 16px;
+  border-radius: 18px;
+}
+
+.floating {
+  animation: floating 4s ease-in-out infinite;
+}
+
+@keyframes floating {
+  0%,100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+}
 

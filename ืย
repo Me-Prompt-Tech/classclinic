@@ -1,0 +1,31 @@
+
+> classclinic@0.1.0 dev
+> next dev
+
+▲ Next.js 16.2.9 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.1.56:3000
+✓ Ready in 948ms
+
+ GET /booking 200 in 1464ms (next.js: 947ms, application-code: 517ms)
+ GET /booking 200 in 464ms (next.js: 24ms, application-code: 439ms)
+ GET /booking 200 in 628ms (next.js: 316ms, application-code: 312ms)
+ GET /booking 200 in 229ms (next.js: 60ms, application-code: 169ms)
+ GET /booking 200 in 120ms (next.js: 9ms, application-code: 110ms)
+ GET /booking 200 in 120ms (next.js: 48ms, application-code: 72ms)
+✓ Compiled in 1497ms
+ GET /booking 500 in 1470ms (next.js: 769ms, application-code: 701ms)
+ GET /booking 500 in 349ms (next.js: 301ms, application-code: 48ms)
+ GET /booking 500 in 119ms (next.js: 53ms, application-code: 65ms)
+✓ Compiled in 183ms
+ GET /booking 200 in 386ms (next.js: 163ms, application-code: 223ms)
+ GET /booking 200 in 156ms (next.js: 7ms, application-code: 150ms)
+✓ Compiled in 619ms
+ GET /booking 200 in 159ms (next.js: 81ms, application-code: 78ms)
+ GET /booking 200 in 390ms (next.js: 58ms, application-code: 332ms)
+ GET /booking 200 in 563ms (next.js: 104ms, application-code: 459ms)
+ GET /booking 200 in 171ms (next.js: 28ms, application-code: 143ms)
+ GET /booking 200 in 167ms (next.js: 118ms, application-code: 48ms)
+ GET /booking 200 in 441ms (next.js: 15ms, application-code: 426ms)
+Terminate batch job (Y/N)? [?25h
+
