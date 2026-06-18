@@ -2,38 +2,55 @@ import Image from "next/image";
 
 export default function ContractPage() {
   return (
-    <main className="min-h-screen bg-[#FFF7F5] py-10">
+    <main className="min-h-screen bg-[#F8F5F0] py-10">
       <div className="max-w-6xl mx-auto px-4">
-       <div className="bg-white rounded-3xl shadow-xl border border-[#F8D7E3] overflow-hidden">
+       <div className="bg-white rounded-[32px] shadow-[0_10px_40px_rgba(0,0,0,0.06)] border border-[#EFEAE3] overflow-hidden">
 
           {/* Hero */}
-          <div className="bg-gradient-to-r from-[#F08F78] to-[#FBC4B4] text-white p-10">
-  <h1 className="text-4xl md:text-5xl font-bold">
-    Class Clinic Korat
-  </h1>
+          <div
+  className="bg-gradient-to-r from-[#FFFFFF] via-[#F8F4EE] to-[#EFE2CF] p-16 text-center border-b border-[#E8DDD0]"
+>
+<h1
+  className="
+    text-6xl md:text-7xl
+    font-semibold
+    mb-5
+    bg-gradient-to-r
+    from-[#D9B978]  
+    via-[#C9A660]
+    to-[#A67D38]
+    bg-clip-text
+    text-transparent
+    drop-shadow-[0_2px_8px_rgba(176,141,87,0.25)]
+  "   
+>
+  Class Clinic Korat
+</h1>
 
-  <p className="mt-3 text-white/90 text-lg">
+  <div className="w-24 h-[2px] bg-[#C9A876] mx-auto mt-6"></div>
+
+  <p className="text-grey-500 text-lg">
     คลินิกความงามและดูแลสุขภาพ
   </p>
 </div>
 
           {/* Contact */}
           <div className="p-8">
-            <h2 className="text-2xl font-bold text-[#E67E63] mb-6">
+            <h2 className="text-2xl font-semibold text-[#B8924F] tracking-wide mb-6">
               ข้อมูลติดต่อ
             </h2>
 
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid md:grid-cols-2 gap-5">
               <div className="space-y-4">
                 <div>
-                  <p className="font-semibold text-[#D96C4D]">ชื่อคลินิก</p>
+                  <p className="font-semibold text-[#B8924F]">ชื่อคลินิก</p>
                   <p className="text-gray-600">
                     Class Clinic Korat
                   </p>
                 </div>
 
                 <div>
-                  <p className="font-semibold text-[#D96C4D]">ที่อยู่</p>
+                  <p className="font-semibold text-[#B8924F]">ที่อยู่</p>
                   <p className="text-gray-600">
                     403 ถนนมิตรภาพ
                     ตำบลในเมือง อำเภอเมืองนครราชสีมา
@@ -42,14 +59,14 @@ export default function ContractPage() {
                 </div>
 
                 <div>
-                  <p className="font-semibold text-[#D96C4D]">เบอร์โทรศัพท์</p>
+                  <p className="font-semibold text-[#B8924F]">เบอร์โทรศัพท์</p>
                   <p className="text-gray-600">
                     062-632-4533
                   </p>
                 </div>
 
                 <div>
-                  <p className="font-semibold text-[#D96C4D]">เวลาทำการ</p>
+                  <p className="font-semibold text-[#B8924F]">เวลาทำการ</p>
                   <p className="text-gray-600">
                     ทุกวัน 11:30 - 20:00 น.
                   </p>
@@ -73,7 +90,7 @@ export default function ContractPage() {
 
           {/* Gallery */}
           <div className="px-8 pb-8">
-           <h2 className="text-2xl font-bold text-[#E67E63] mb-6">
+           <h2 className="text-2xl font-semibold text-[#B8924F] tracking-wide mb-6">
               รูปภาพคลินิก
             </h2>
             
@@ -126,7 +143,7 @@ export default function ContractPage() {
 
           {/* Contract */}
           <div className="border-t p-8">
-            <h2 className="text-2xl font-bold text-[#E67E63] mb-6">
+            <h2 className="text-2xl font-semibold text-[#B8924F] mb-6">
               สัญญาการให้บริการ
             </h2>
 
