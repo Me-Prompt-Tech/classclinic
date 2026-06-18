@@ -87,7 +87,7 @@ import Image from "next/image";
           Hair Removal
         </h3>
         <p className="text-gray-600 leading-relaxed">
-          กำจัดขนด้วยเลเซอร์ ผิวเนียนเรียบ มั่นใจทุกสัมผั
+          กำจัดขนด้วยเลเซอร์ ผิวเนียนเรียบ มั่นใจทุกสัมผัส
         </p>
          <img src="./image/07.webp" alt="" />
       </div>
