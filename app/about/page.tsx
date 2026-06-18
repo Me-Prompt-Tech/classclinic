@@ -27,9 +27,8 @@ export default function AboutPage() {
           priority
           className="object-cover"
         />
-
-        {/* ปรับให้ภาพพื้นหลังชัดขึ้น */}
-        <div className="absolute inset-0 bg-white/35 backdrop-blur-[1px]" />
+          <div className="absolute inset-0 bg-black/20" />
+        
       </div>
 
       {/* Hero Section */}
@@ -41,7 +40,7 @@ export default function AboutPage() {
                 ABOUT US
               </span>
 
-              <h1 className="mt-6 font-[family:var(--font-heading)] text-4xl font-semibold tracking-wide text-stone-800 md:text-5xl">
+              <h1 className="mt-6 font-[family-name:var text-4xl font-semibold tracking-wide text-stone-800 md:text-5xl">
                 เกี่ยวกับคลินิกของเรา
               </h1>
 
@@ -85,7 +84,7 @@ export default function AboutPage() {
         </div>
 
         <div className="p-8 text-center">
-          <h2 className="font-[family:var(--font-heading)] text-xl font-semibold text-stone-800">
+          <h2 className="font-[family-name:var text-xl font-semibold text-stone-800">
             เทคโนโลยีทันสมัย
           </h2>
 
@@ -108,7 +107,7 @@ export default function AboutPage() {
         </div>
 
         <div className="p-8 text-center">
-          <h2 className="font-[family:var(--font-heading)] text-xl font-semibold text-stone-800">
+          <h2 className="font-[family-name:var text-xl font-semibold text-stone-800">
             ทีมแพทย์ผู้เชี่ยวชาญ
           </h2>
 
@@ -131,7 +130,7 @@ export default function AboutPage() {
         </div>
 
         <div className="p-8 text-center">
-          <h2 className="font-[family:var(--font-heading)] text-xl font-semibold text-stone-800">
+          <h2 className="font-[family-name:var text-xl font-semibold text-stone-800">
             ใส่ใจทุกการดูแล
           </h2>
 
@@ -152,7 +151,7 @@ export default function AboutPage() {
               OUR VISION
             </span>
 
-            <h2 className="mt-6 font-[family:var(--font-heading)] text-3xl font-semibold tracking-wide text-stone-800">
+            <h2 className="mt-6 font-[family-name:var text-3xl font-semibold tracking-wide text-stone-800">
               วิสัยทัศน์ของเรา
             </h2>
 
@@ -177,7 +176,7 @@ export default function AboutPage() {
                 CONTACT US
               </span>
 
-              <h2 className="mt-5 font-[family:var(--font-heading)] text-3xl font-semibold tracking-wide text-[#5b3a29] md:text-4xl">
+              <h2 className="mt-5 font-[family-name:var text-3xl font-semibold tracking-wide text-[#5b3a29] md:text-4xl">
                 พร้อมให้คำปรึกษา
               </h2>
 
