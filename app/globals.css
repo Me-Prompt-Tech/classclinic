@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+@theme {
+  --font-sans: var(--font-kanit), system-ui, sans-serif;
+  --font-mono: var(--font-kanit), monospace;
+}
+
 :root {
 --gold-dark: #8b6a35;
 --gold: #b8924f;
@@ -10,7 +15,7 @@
 }
 
 body {
-font-family: system-ui, sans-serif;
+font-family: var(--font-kanit), system-ui, sans-serif;
 background: linear-gradient(
 180deg,
 #faf7f2 0%,

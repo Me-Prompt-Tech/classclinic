@@ -14,16 +14,19 @@ export default function HomePage() {
   <div className="container relative mx-auto px-6">
     
     {/* หัวข้อใหญ่ปรับปรุงใหม่: เพิ่มลูกเล่นมินิมอลด้วยอักษรเอียงและสีไฮไลต์บางเบา */}
-    <h1 className="mb-6 text-5xl font-light tracking-[0.15em] text-[#332F2B] md:text-7xl uppercase select-none">
-      <span className="block text-xs tracking-[0.4em] text-[#B4975A] font-sans font-medium mb-3 md:mb-5">
-        The Premier
-      </span>
-      <span className="font-serif">Class</span>{" "}
-      <span className="font-serif italic font-normal text-[#9C8453] tracking-[0.1em] lowercase normal-case">
-        c
-      </span>
-      <span className="font-serif -ml-1">linic</span>
-    </h1>
+    <h1 className="mb-6 text-4xl font-light tracking-[0.2em] text-[#332F2B] sm:text-5xl md:text-6xl uppercase select-none">
+  {/* ซับไตเติลด้านบนสุด */}
+  <span className="block text-xs tracking-[0.4em] text-[#B4975A] font-sans font-medium mb-4 md:mb-6">
+    THE PREMIER
+  </span>
+  
+  {/* ตัวอักษรเท่ากันหมด พร้อมเงาฟุ้งแบบมินิมอล */}
+  <span className="font-serif block text-transparent bg-clip-text bg-gradient-to-r from-[#332F2B] via-[#655A4F] to-[#332F2B] drop-shadow-[0_2px_8px_rgba(180,151,90,0.18)]">
+    CLASS
+    <span className="mx-3 text-[#B4975A] inline-block font-sans font-extralight opacity-60">|</span>
+    <span className="text-[#9C8453] drop-shadow-[0_4px_12px_rgba(156,132,83,0.25)]">CLINIC</span>
+  </span>
+</h1>
     
     <p className="mx-auto mb-12 max-w-xl font-sans text-sm tracking-widest leading-relaxed text-[#787065] font-light">
       Crafting Timeless Medical Innovations & Comprehensive Healthcare.
@@ -159,19 +162,25 @@ export default function HomePage() {
         <div className="container mx-auto max-w-5xl px-6">
           <div className="grid items-center gap-16 md:grid-cols-12">
             
-            {/* ฝั่งซ้าย: รูปทรง Arch ขนาดใหญ่ครอบภาพบุคคลแบบใน ref1.jpg */}
-            <div className="md:col-span-5 flex justify-center">
-              <div className="w-full max-w-[320px] aspect-[3/4] rounded-t-full border border-[#B4975A]/40 bg-white p-3 shadow-md flex items-center justify-center">
-                <div className="w-full h-full rounded-t-full bg-gradient-to-b from-[#F3EFE7] to-[#FAF7F2] flex items-center justify-center border border-[#E6DEC9]/50">
-                  <span className="text-[11px] tracking-[0.2em] text-[#B4975A] uppercase">Medical Team Image</span>
-                </div>
-              </div>
-            </div>
+          {/* ฝั่งซ้าย: รูปทรง Arch ขนาดใหญ่ครอบภาพบุคคลแบบใน ref1.jpg */}
+<div className="md:col-span-5 flex justify-center">
+  <div className="w-full max-w-[320px] aspect-[3/4] rounded-t-full border border-[#B4975A]/40 bg-white p-3 shadow-md">
+    {/* เพิ่ม overflow-hidden เพื่อให้รูปภาพที่อยู่ด้านในถูกตัดโค้งตามกรอบ Arch */}
+    <div className="w-full h-full rounded-t-full border border-[#E6DEC9]/50 overflow-hidden relative">
+      <img 
+        src="/medical.jpg" // 👈 เปลี่ยนเป็นชื่อไฟล์รูปภาพของคุณที่อยู่ในโฟลเดอร์ public (เช่น "/team.jpg")
+        alt="Medical Team"
+        className="w-full h-full object-cover rounded-t-full" 
+        // object-cover จะช่วยขยายรูปให้เต็มพื้นที่กรอบพอดี โดยที่หน้าคนไม่เบี้ยวครับ
+      />
+    </div>
+  </div>
+</div>
 
             {/* ฝั่งขวา: คำนิยม / ข้อมูลติดต่อ ฟอนต์ลายมือหรือตัวเอนบางๆ ลักชัวรี */}
             <div className="md:col-span-7 text-center md:text-left">
               <h4 className="font-sans text-xs tracking-[0.25em] text-[#B4975A] uppercase mb-4">Testimonials & Contact</h4>
-              <p className="text-xl font-light italic leading-relaxed text-[#332F2B] mb-6">
+              <p className="text-xl font-light italic leading-relaxed text-[#332F2B] mb-6 font-sans">
                 "การดูแลสุขภาพไม่ใช่เรื่องชั่วคราว แต่เป็นของขวัญที่ยั่งยืน คลาสคลินิกโคราชพร้อมดูแลคุณในทุกช่วงเวลาของชีวิตด้วยมาตรฐานความปลอดภัยสูงสุด"
               </p>
               <div className="text-[11px] tracking-[0.2em] uppercase text-[#787065] mb-8 font-sans">
