@@ -41,7 +41,7 @@ export default function Navbar() {
 
         {/* MENU - มินิมอล มีลูกเล่นเส้นใต้วิ่งตอน Hover */}
         <nav className="hidden items-center gap-10 md:flex">
-          {["Home", "Service", "About", "Contact"].map((item) => (
+          {["Home", "Services", "About", "Contact"].map((item) => (
             <a
               key={item}
               href={item === "Home" ? "/" : `/${item.toLowerCase()}`}
