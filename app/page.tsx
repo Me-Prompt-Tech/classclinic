@@ -7,51 +7,93 @@ export default function HomePage() {
       
 
       {/* 2. Hero Section (ปรับโครงสร้างหัวข้อใหญ่ ผ้าม่านพริ้วๆ และปุ่มกรอบเหลี่ยมตาม ref1.jpg) */}
-      <section id="home" className="relative overflow-hidden bg-gradient-to-b from-[#FAF7F2] via-[#F4EFE6] to-[#FAF7F2] py-32 text-center">
-        {/* เลียนแบบลวดลายใบไม้สีทองจางๆ บรรยากาศนุ่มนวลแบบในรูปภาพ */}
-        <div className="absolute inset-0 opacity-40 bg-[radial-gradient(circle_at_top,_var(--tw-gradient-stops))] from-[#EFEAE0] via-transparent to-transparent" />
-        
-        <div className="container relative mx-auto px-6">
-          {/* หัวข้อใหญ่ฟอนต์หรูหราสไตล์ Serif ตัวบางหรูตามภาพต้นฉบับ */}
-          <h1 className="mb-6 text-5xl font-light tracking-[0.15em] text-[#332F2B] md:text-7xl uppercase">
-            Class Clinic
-          </h1>
-          
-          <p className="mx-auto mb-12 max-w-xl font-sans text-sm tracking-widest leading-relaxed text-[#787065] font-light">
-            Crafting Timeless Medical Innovations & Comprehensive Healthcare.
-          </p>
-          
-          {/* ปุ่ม View Portfolio สี่เหลี่ยมผืนผ้าขอบทองแบนราบสุดคลาสสิกตามในรูปภาพ */}
-          <button className="border border-[#B4975A] bg-white/60 px-8 py-3 text-[10px] font-medium tracking-[0.3em] text-[#332F2B] uppercase transition duration-300 hover:bg-[#B4975A] hover:text-white">
-            View Services
-          </button>
-        </div>
-      </section>
+<section id="home" className="relative overflow-hidden bg-gradient-to-b from-[#FAF7F2] via-[#F4EFE6] to-[#FAF7F2] py-32 text-center">
+  {/* เลียนแบบลวดลายใบไม้สีทองจางๆ บรรยากาศนุ่มนวลแบบในรูปภาพ */}
+  <div className="absolute inset-0 opacity-40 bg-[radial-gradient(circle_at_top,_var(--tw-gradient-stops))] from-[#EFEAE0] via-transparent to-transparent" />
+  
+  <div className="container relative mx-auto px-6">
+    
+    {/* หัวข้อใหญ่ปรับปรุงใหม่: เพิ่มลูกเล่นมินิมอลด้วยอักษรเอียงและสีไฮไลต์บางเบา */}
+    <h1 className="mb-6 text-5xl font-light tracking-[0.15em] text-[#332F2B] md:text-7xl uppercase select-none">
+      <span className="block text-xs tracking-[0.4em] text-[#B4975A] font-sans font-medium mb-3 md:mb-5">
+        The Premier
+      </span>
+      <span className="font-serif">Class</span>{" "}
+      <span className="font-serif italic font-normal text-[#9C8453] tracking-[0.1em] lowercase normal-case">
+        c
+      </span>
+      <span className="font-serif -ml-1">linic</span>
+    </h1>
+    
+    <p className="mx-auto mb-12 max-w-xl font-sans text-sm tracking-widest leading-relaxed text-[#787065] font-light">
+      Crafting Timeless Medical Innovations & Comprehensive Healthcare.
+    </p>
+    
+    {/* ปุ่ม View Portfolio สี่เหลี่ยมผืนผ้าขอบทองแบนราบสุดคลาสสิกตามในรูปภาพ */}
+    <button className="border border-[#B4975A] bg-white/60 px-8 py-3 text-[10px] font-medium tracking-[0.3em] text-[#332F2B] uppercase transition duration-300 hover:bg-[#B4975A] hover:text-white">
+      View Services
+    </button>
+  </div>
+</section>
 
-      {/* 3. Arch Gallery Section (ลอกแบบรูปทรงประตูโค้งสไตล์อิตาลีจาก ref1.jpg เป๊ะๆ) */}
-      <section className="bg-[#FAF7F2] px-6 pb-28">
-        <div className="container mx-auto">
-          <div className="mb-14 text-center">
-            <h2 className="font-sans text-xs tracking-[0.25em] text-[#B4975A] uppercase">Improves Your Lifestyle Center.</h2>
-          </div>
-          
-          {/* แกลเลอรีรูปทรง Arch ประตูโค้งเรียงตัวกัน 3 บล็อกใหญ่ตามภาพ */}
-          <div className="grid gap-6 sm:grid-cols-3 max-w-5xl mx-auto">
-            {/* โค้งที่ 1 */}
-            <div className="aspect-[3/4] rounded-t-full border border-[#E6DEC9] bg-[#F3EFE7] p-4 flex flex-col justify-end items-center shadow-sm transition duration-300 hover:border-[#B4975A]/60">
-              <span className="mb-4 text-xs tracking-[0.2em] text-[#787065] uppercase">Diagnostics</span>
-            </div>
-            {/* โค้งที่ 2 (ตัวกลางที่เด่นที่สุดในรูปภาพ) */}
-            <div className="aspect-[3/4] rounded-t-full border border-[#B4975A]/40 bg-white p-4 flex flex-col justify-end items-center shadow-md transition duration-300 hover:border-[#B4975A]">
-              <span className="mb-4 text-xs tracking-[0.2em] font-medium text-[#332F2B] uppercase">Wellness Center</span>
-            </div>
-            {/* โค้งที่ 3 */}
-            <div className="aspect-[3/4] rounded-t-full border border-[#E6DEC9] bg-[#F3EFE7] p-4 flex flex-col justify-end items-center shadow-sm transition duration-300 hover:border-[#B4975A]/60">
-              <span className="mb-4 text-xs tracking-[0.2em] text-[#787065] uppercase">Prevention</span>
-            </div>
-          </div>
-        </div>
-      </section>
+     {/* 3. Arch Gallery Section (รูปทรงประตูโค้งสไตล์อิตาลีจาก ref1.jpg พร้อมรูปภาพด้านในจากโฟลเดอร์ public) */}
+<section className="bg-[#FAF7F2] px-6 pb-28">
+  <div className="container mx-auto">
+    <div className="mb-14 text-center">
+      <h2 className="font-sans text-xs tracking-[0.25em] text-[#B4975A] uppercase">Improves Your Lifestyle Center.</h2>
+    </div>
+    
+    {/* แกลเลอรีรูปทรง Arch ประตูโค้งเรียงตัวกัน 3 บล็อกใหญ่ตามภาพ */}
+    <div className="grid gap-6 sm:grid-cols-3 max-w-5xl mx-auto">
+      
+      {/* โค้งที่ 1 - Diagnostics */}
+      <div className="relative group aspect-[3/4] rounded-t-full border border-[#E6DEC9] bg-[#F3EFE7] p-4 flex flex-col justify-end items-center shadow-sm overflow-hidden transition duration-300 hover:border-[#B4975A]/60">
+        {/* รูปภาพพื้นหลังดึงจาก public - ตัดขอบโค้งมนตามรูปทรงกรอบพอดี */}
+        <img 
+          src="/diagnostics.jpg" // เปลี่ยนชื่อไฟล์ให้ตรงกับในโฟลเดอร์ public ของคุณ
+          alt="Diagnostics" 
+          className="absolute inset-0 w-full h-full object-cover rounded-t-full transition duration-500 group-hover:scale-105"
+        />
+        {/* เลเยอร์ Gradient บังด้านล่างรูปภาพ เพื่อให้ตัวอักษรสีเทา/ครีม อ่านง่ายไม่กลืนไปกับรูป */}
+        <div className="absolute inset-0 rounded-t-full bg-gradient-to-t from-[#FAF7F2] via-[#FAF7F2]/30 to-transparent"></div>
+        
+        {/* ข้อความ (อยู่ชั้นบนสุดด้วย z-10) */}
+        <span className="relative z-10 mb-4 text-xs tracking-[0.2em] text-[#787065] uppercase font-medium">Diagnostics</span>
+      </div>
+
+      {/* โค้งที่ 2 (ตัวกลางที่เด่นที่สุดในรูปภาพ) - Wellness Center */}
+      <div className="relative group aspect-[3/4] rounded-t-full border border-[#B4975A]/40 bg-white p-4 flex flex-col justify-end items-center shadow-md overflow-hidden transition duration-300 hover:border-[#B4975A]">
+        {/* รูปภาพพื้นหลังดึงจาก public - ตัดขอบโค้งมนตามรูปทรงกรอบพอดี */}
+        <img 
+          src="/wellness center.jpg" // เปลี่ยนชื่อไฟล์ให้ตรงกับในโฟลเดอร์ public ของคุณ
+          alt="Wellness Center" 
+          className="absolute inset-0 w-full h-full object-cover rounded-t-full transition duration-500 group-hover:scale-105"
+        />
+        {/* เลเยอร์ Gradient บังด้านล่างรูปภาพ เพื่อให้ตัวอักษรสีเข้ม อ่านง่ายไม่กลืนไปกับรูป */}
+        <div className="absolute inset-0 rounded-t-full bg-gradient-to-t from-white via-white/30 to-transparent"></div>
+        
+        {/* ข้อความ (อยู่ชั้นบนสุดด้วย z-10) */}
+        <span className="relative z-10 mb-4 text-xs tracking-[0.2em] font-medium text-[#332F2B] uppercase">Wellness Center</span>
+      </div>
+
+      {/* โค้งที่ 3 - Prevention */}
+      <div className="relative group aspect-[3/4] rounded-t-full border border-[#E6DEC9] bg-[#F3EFE7] p-4 flex flex-col justify-end items-center shadow-sm overflow-hidden transition duration-300 hover:border-[#B4975A]/60">
+        {/* รูปภาพพื้นหลังดึงจาก public - ตัดขอบโค้งมนตามรูปทรงกรอบพอดี */}
+        <img 
+          src="/prevention.jpg" // เปลี่ยนชื่อไฟล์ให้ตรงกับในโฟลเดอร์ public ของคุณ
+          alt="Prevention" 
+          className="absolute inset-0 w-full h-full object-cover rounded-t-full transition duration-500 group-hover:scale-105"
+        />
+        {/* เลเยอร์ Gradient บังด้านล่างรูปภาพ เพื่อให้ตัวอักษรสีเทา/ครีม อ่านง่ายไม่กลืนไปกับรูป */}
+        <div className="absolute inset-0 rounded-t-full bg-gradient-to-t from-[#FAF7F2] via-[#FAF7F2]/30 to-transparent"></div>
+        
+        {/* ข้อความ (อยู่ชั้นบนสุดด้วย z-10) */}
+        <span className="relative z-10 mb-4 text-xs tracking-[0.2em] text-[#787065] uppercase font-medium">Prevention</span>
+      </div>
+
+    </div>
+  </div>
+</section>
 
       {/* 4. Services Section (ถอดแบบบล็อกข้อความกลาง ไอคอนสีทองเรียบหรูด้านล่าง) */}
       <section id="services" className="bg-[#FAF7F2] py-24 border-t border-[#E6DEC9]/40">
